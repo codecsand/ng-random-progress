@@ -58,9 +58,9 @@ append progress date instead of update.
 make the progress run for ever.
 
 ## Demo
-please open the demo html file to see how it works.
+please open the demo html file to see how it works.  
 
-  
+
 ## License
 MIT License
 
