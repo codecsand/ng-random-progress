@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ngRandomProgress Demo</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="dist/ng-random-progress.js"></script>
+  <script>
+  //demo app
+  	var myapp = angular.module('myapp', ['ngRandomProgress']);
+	myapp.controller("maincontroller",['$scope', '$attrs', function($scope, $attrs) {
+	$scope.arr = []; var i=1; while($scope.arr.length<50){$scope.arr.push('text'+i+' ');i++;}
+	$scope.imgs = [];  i=1; while($scope.imgs.length<50){$scope.imgs.push('images/users/user'+i+'.png');i++;}
+	$scope.html = [];  i=1; while($scope.html.length<50)
+	{$scope.html.push('user'+i+'<br/><img src="'+$scope.imgs[i-1]+'" />'+'<br/>'+'<img src="'+'images/flags/flag'+i+'.png" class="flag" />');i++;}
+	$scope.rndprogress = {};
+	$scope.rndprogressimgs = {};
+	$scope.rndprogresshtml = {};
+	}]);
+  </script>
+  <style>
+  div{
+	width:300px;
+  }
+  div.html{
+	text-align:center;
+  }
+  div.w{
+    word-wrap: break-word;
+  }
+  img{
+	width:100px;
+  }
+  .flag{
+	width:50px;
+  }
+  </style>
+</head>
+<body>
+<div ng-app="myapp">
+<div ng-controller="maincontroller">
+	
+<a href ng-click="rndprogressimgs.start()" >Start</a>
+<a href ng-click="rndprogressimgs.stop()" >Stop</a><br/>	
+<img rp-data="imgs" rp-control="rndprogressimgs"   rp-time="100" random-progress > </img>
+
+<br/>
+<a href ng-click="rndprogress.start()" >Start</a>
+<a href ng-click="rndprogress.stop()" >Stop</a><br/>
+<div class="w">
+<span rp-data="arr" rp-append="true"  rp-control="rndprogress" rp-random="true" rp-time="100"  random-progress ></span>  
+</div>
+
+<br/>
+<a href ng-click="rndprogresshtml.start()" >Start</a>
+<a href ng-click="rndprogresshtml.stop()" >Stop</a>	
+<div class="html" rp-data="html" rp-control="rndprogresshtml"  rp-random="true" rp-loopforever="true"  rp-time="150" random-progress > </div>
+
+</div>
+</div>
+</body>
+</html>
