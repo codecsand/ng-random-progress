@@ -40,28 +40,27 @@ Or
 ```
 
 ## ngRandomProgress atributes
-####rp-data:
-an array of data type which will appeare as a progress data.
+**rp-data:** an array of data type which will appeare as a progress data.
 
-####rp-control:
+**rp-control:**
 the control module to start or stope the progress.
 
-####rp-time:
+**rp-time:**
 progress time per milliseconds.
 
-####rp-random:
+**rp-random:**
 enable or disable random progress.
 
-####rp-append:
+**rp-append:**
 append progress date instead of update.
 
-####rp-loopforever:
+**rp-loopforever:**
 make the progress run for ever.
 
 ## Demo
 please open the demo html file to see how it works.
 
-
+  
 ## License
 MIT License
 
