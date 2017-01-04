@@ -19,7 +19,7 @@ Initialize the control module in your controller
 $scope.rndprogress = {};
 ```
 
-Create your desire html element with random-progress directive atribute
+Create your desire html element with random-progress directive attribute
 ```html
 <span random-progress ></span>  
 ```
@@ -39,7 +39,7 @@ Or
 <a href ng-click="rndprogress.stop()" >Stop</a>
 ```
 
-## ngRandomProgress atributes
+## ngRandomProgress attributes
 **rp-data:** an array of data type which will appeare as a progress data.
 
 **rp-control:**
