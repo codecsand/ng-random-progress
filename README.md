@@ -1,6 +1,10 @@
 # ng-random-progress
 Angular module to generate a random progress by array data of text or images or even html.
 
+## Demo
+![](https://github.com/mahmz/ng-random-progress/blob/master/images/demo.gif)
+please open the demo html file to see how it works.  
+
 ## Install
 Put the script tag in your index.html
 ```html
@@ -56,9 +60,6 @@ append progress date instead of update.
 
 **rp-loopforever:**
 make the progress run for ever.
-
-## Demo
-please open the demo html file to see how it works.  
 
 
 ## License
