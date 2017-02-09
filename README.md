@@ -3,7 +3,8 @@ Angular module to generate a random progress by array data of text or images or 
 
 ## Demo
 ![](https://github.com/mahmz/ng-random-progress/blob/master/images/demo.gif)
-please open the demo html file to see how it works.  
+- please open the demo html file to see how it works.  
+
 
 ## Install
 Put the script tag in your index.html
